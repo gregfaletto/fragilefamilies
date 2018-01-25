@@ -27,7 +27,7 @@ used. Those files were taken from the Fragile Familes github, at https://github.
 
 ## Files
 
-Here are descriptions of each of the R scripts in this repository:
+Here are descriptions of each of the files in this repository:
 
 * **ffc2.R:** My code for my final entry which loads the raw data, pre-processes it, and trains models, as described above.
 
