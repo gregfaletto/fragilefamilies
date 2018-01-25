@@ -4,13 +4,13 @@
 
 Cleaned data and created principal components regression and lasso-penalized linear regression models to predict three different continuous outcome variables in a training set with only 2,121 observations, nearly 13,000 covariates, and a great deal of missing data. All three of my models finished in the top 40% of entries and outperformed a baseline null model on the test set.
 
-After pre-processing the data, my code trainsed lasso-penalized linear regression models and well as principal components linear regression models on each of the three response variables, as measured at age 15:
+After pre-processing the data, my code trained lasso-penalized linear regression models and well as principal components linear regression (PCR) models on each of the three response variables, as measured at age 15:
 
 * **GPA** 
 
-* **"grit"**: a measure of perserverance--see http://www.fragilefamilieschallenge.org/grit/ for details.
+* **"Grit"**: a measure of perserverance--see http://www.fragilefamilieschallenge.org/grit/ for details.
 
-* **"material hardship"**: a measure of extreme poverty--see http://www.fragilefamilieschallenge.org/material-hardship/ for details.
+* **"Material hardship"**: a measure of extreme poverty--see http://www.fragilefamilieschallenge.org/material-hardship/ for details.
 
 I used cross-validation to find the best lasso-penalized model as well as the best PCR model. Final, I compared the root-mean-squared error (RMSE) on the cross-validation sets for the best lasso-penalized model to the cross-validation RMSE on the best PCR model to choose the final model for each variable. The final selections were as follows:
 
