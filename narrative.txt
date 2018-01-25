@@ -1,0 +1,10 @@
+GPA model:
+Lasso-penalized linear regression with 57 variables.
+Grit model:
+Principal components linear regression with 1 components.
+Material hardship model:
+Lasso-penalized linear regression with 57 variables.
+Thank you to Stephen McKay AKA the_Brit, whose code 'FFC-simple-R-code.R' I
+used to get started, Viola Mocz (vmocz) & Sonia Hashim (shashim), whose code
+FeatEngineering.R I used, and hty, whose code 'COS424_HW2_imputation_Rcode.R' I
+used. Those files were taken from the Fragile Familes github.
