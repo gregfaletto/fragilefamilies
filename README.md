@@ -2,17 +2,19 @@
 
 ## Summary
 
-Cleaned data and created principal components regression and lasso-penalized linear regression models to predict three different continuous outcome variables in a training set with only 2,121 observations, nearly 13,000 covariates, and a great deal of missing data. All three of my models finished in the top 40% of entries and outperformed a baseline null model on the test set.
+The Fragile Families Challenge was a contest to create models predicting six outcome variables for disadvantaged children at age 15. Panel data derived from interviews with the children and their caretakers were available to train models. In total, there were nearly 13,000 predictor variables, with a training set of 2,121 children. A test set was held out by the organizers of the contest to evaluate the models at the end.
 
-After pre-processing the data, my code trained lasso-penalized linear regression models and well as principal components linear regression (PCR) models on each of the three response variables, as measured at age 15:
+I participated in the contest, as one of my first applications of training machine learning models on a real-life data set (with a great deal of missing data). 
+
+I wrote my code in R. After pre-processing the data and dealing with missing data (imputation, feature removal if necessary, etc.), my code trained lasso-penalized linear regression models and well as principal components linear regression (PCR) models on each of the three response variables, as measured at age 15:
 
 * **GPA** 
 
-* **"Grit"**: a measure of perserverance--see http://www.fragilefamilieschallenge.org/grit/ for details.
+* **"Grit"**: a measure of perseverance--see http://www.fragilefamilieschallenge.org/grit/ for details.
 
 * **"Material hardship"**: a measure of extreme poverty--see http://www.fragilefamilieschallenge.org/material-hardship/ for details.
 
-I used cross-validation to find the best lasso-penalized model as well as the best PCR model. Final, I compared the root-mean-squared error (RMSE) on the cross-validation sets for the best lasso-penalized model to the cross-validation RMSE on the best PCR model to choose the final model for each variable. The final selections were as follows:
+I used cross-validation to find the best lasso-penalized model as well as the best PCR model. Final, I compared the root-mean-squared error (RMSE) on the cross-validation sets for the best lasso-penalized model to the cross-validated RMSE on the best PCR model to choose the final model for each variable. The final selections were as follows:
 
 * **GPA model:** Lasso-penalized linear regression with 57 variables.
 
@@ -20,10 +22,14 @@ I used cross-validation to find the best lasso-penalized model as well as the be
 
 * **Material hardship model:** Lasso-penalized linear regression with 57 variables.
 
+All three of my models finished in the top 40% of entries and outperformed a baseline null model on the test set.
+
 Thank you to Stephen McKay AKA the_Brit, whose code 'FFC-simple-R-code.R' I
 used to get started, Viola Mocz (vmocz) & Sonia Hashim (shashim), whose code
 FeatEngineering.R I used, and hty, whose code 'COS424_HW2_imputation_Rcode.R' I
-used. Those files were taken from the Fragile Familes github, at https://github.com/fragilefamilieschallenge.
+used. Those files were taken from the Fragile Families github, at https://github.com/fragilefamilieschallenge.
+
+More information about the Fragile Families Challenge is available at http://www.fragilefamilieschallenge.org.
 
 ## Files
 
